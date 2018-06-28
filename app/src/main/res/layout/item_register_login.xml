@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/register_login_bottom_line" >
+
+        <TextView
+            android:id="@+id/title_icon"
+            style="@style/register_login_icon"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15"
+            android:visibility="gone"
+            android:text="账户" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:id="@+id/view_divide_line"
+            android:layout_toRightOf="@+id/title_icon"
+            android:visibility="gone"
+            android:background="@android:color/darker_gray"
+            />
+
+        <EditText
+            android:id="@+id/input_edt"
+            style="@style/register_edittext"
+            android:layout_toLeftOf="@+id/delete_icon"
+            android:layout_toRightOf="@+id/view_divide_line"
+            android:hint="@string/register_account_hint"
+            android:textColorHint="@color/white"
+            android:inputType="phone"
+            android:maxLength="11" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            style="@style/register_login_delete_icon"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

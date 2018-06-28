@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgGuide"
+        style="@style/match_parent"
+        android:src="@drawable/welcome_2"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/btnEnter"
+        style="@style/wrap_content"
+        android:layout_height="300dp"
+        android:layout_width="250dp"
+        android:visibility="visible"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dp_45"
+        android:drawableBottom="@drawable/guide_btn_enter" />
+
+
+</FrameLayout>

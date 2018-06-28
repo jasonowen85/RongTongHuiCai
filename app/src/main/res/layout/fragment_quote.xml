@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <ProgressBar
+        android:id="@+id/web_view_progress_bar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:progressDrawable="@drawable/web_view_progress_layer"
+        android:visibility="gone" />
+
+    <com.itheima.view.BridgeWebView
+        android:id="@+id/web_view_quote"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

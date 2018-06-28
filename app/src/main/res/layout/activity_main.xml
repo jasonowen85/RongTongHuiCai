@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_50" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:layout_above="@+id/console_line_bottom"-->
+        <!--android:background="@color/gray" />-->
+
+    <LinearLayout
+        android:id="@+id/console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/main_radio_group_bg"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_2">
+
+            <RadioButton
+                android:id="@+id/main_tab_quote"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_index_bdg"
+                android:text="@string/main_quote"
+                android:textColor="@drawable/tab_text_bdg" />
+            <RadioButton
+                android:id="@+id/main_tab_transaction"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_financial_bdg"
+                android:text="@string/main_tab_transaction"
+                android:textColor="@drawable/tab_text_bdg" />
+            <RadioButton
+                android:id="@+id/main_tab_myself"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_my_wealth_bdg"
+                android:text="@string/main_tab_myself"
+                android:textColor="@drawable/tab_text_bdg" />
+
+            <RadioButton
+                android:id="@+id/main_tab_more"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_more_bdg"
+                android:text="@string/main_tab_my_more"
+                android:textColor="@drawable/tab_text_bdg" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>
